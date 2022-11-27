@@ -1,0 +1,83 @@
+.header{
+    background-image: linear-gradient(135deg, black,rgb(122,220,180));
+    
+}
+
+.column{
+    display:flex;
+    flex:1;
+}
+
+#top{
+    background-color: #E6E2D9;
+    height: 150px;
+}
+
+section{
+    padding-bottom: 1rem;
+    background-color: lightgray;
+}
+#SubmitButton{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}  
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 37px auto 0;
+  width: calc(280px * 4);  
+    
+}
+.card{
+  box-shadow: 0 3px 10px 0 #aaa;
+  cursor: pointer;
+  height: 280px;
+  position: relative;
+  width: 243px;
+  background-color: white;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card.visited {
+    box-shadow: 0 3px 10px 2px blue;
+  }
+  
+  @media (max-width: 1100px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+      width: calc(280px * 2);
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      display: block;
+      width: 100vw;
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
