@@ -27,7 +27,7 @@
                 <h3 style="position: relative; left: 50px;">Select a Frame</h3>
                 <div class = "column">
                    <div class="cards" >
-                    <div class = "card">                        
+                    <div class = "card frameCard" data-value="637c0c19fd446cd372bbff34">                        
                         <div class="card-body">
                             <h2 class="card-title">Face Frame</h2>
                             <!-- <p>
@@ -42,8 +42,7 @@
                           <img src= "https://bridgewoodcabinetry.com/wp-content/uploads/2019/12/Construction-02.jpg",
                         style="max-width: 75%; max-height:75%;", class="center"/>
                     </div>
-                    <div class = "card">
-                        
+                    <div class = "card frameCard" data-value="637c0cb1fd446cd372bbff35">                        
                         <div class="card-body">
                             <h2 class="card-title">Frameless</h2>
                             <!-- <p>
@@ -66,21 +65,21 @@
                 <h3 style="position: relative; left: 50px;">Select the Wood</h3>
                 <div class = "column">
                     <div class="cards" >
-                     <div class = "card">                        
+                     <div class = "card woodCard" data-value="637e5c2a317529e2e4f77fb5">                        
                          <div class="card-body">
                              <h2 class="card-title">Maple</h2>                             
                            </div>
                            <img src= "https://bridgewoodcabinetry.com/wp-content/uploads/2019/12/Maple-Natural.jpg",
                          style="max-width: 75%; max-height:75%;", class="center"/>
                      </div>
-                     <div class = "card">                         
+                     <div class = "card woodCard" data-value="637e5c8b317529e2e4f77fb6">                         
                          <div class="card-body">
                              <h2 class="card-title">White Oak</h2>                             
                            </div>
                            <img src= "https://bridgewoodcabinetry.com/wp-content/uploads/2022/02/Natural-with-Light-Wash.jpg",
                          style="max-width: 100%; max-height:75%;", class="center"/>
                      </div>
-                     <div class = "card">                         
+                     <div class = "card woodCard" data-value="637e5cce317529e2e4f77fb7">                         
                         <div class="card-body">
                             <h2 class="card-title">Cherry</h2>                             
                           </div>
@@ -94,14 +93,14 @@
                 <h3 style="position: relative; left: 50px;">Select the Door Type</h3>
                 <div class = "column">
                     <div class="cards" >
-                     <div class = "card">                        
+                     <div class = "card doorCard" data-value="637c0d98fd446cd372bbff38">                        
                          <div class="card-body">
                              <h2 class="card-title">Glass</h2>                             
                            </div>
                            <img src= "https://bridgewoodcabinetry.com/wp-content/uploads/2019/12/AF011-228x300.jpg",
                          style="max-width: 75%; max-height:75%;", class="center"/>
                      </div>
-                     <div class = "card">                         
+                     <div class = "card doorCard" data-value="637c0d5efd446cd372bbff37">                         
                          <div class="card-body">
                              <h2 class="card-title">Wood</h2>                             
                            </div>
@@ -115,21 +114,21 @@
                 <h3 style="position: relative; left: 50px;">Select the Door Style</h3>
                 <div class = "column">
                     <div class="cards" >
-                     <div class = "card">                        
+                     <div class = "card styleCard" data-value="637e6008317529e2e4f77fbd">                        
                          <div class="card-body">
                              <h2 class="card-title">Scandia</h2>                             
                            </div>
                            <img src= "https://bridgewoodcabinetry.com/wp-content/uploads/2019/12/Scandia-160x300.jpg",
                          style="max-width: 75%; max-height:75%;", class="center"/>
                      </div>
-                     <div class = "card">                         
+                     <div class = "card styleCard" data-value="637e608f317529e2e4f77fbe">                         
                          <div class="card-body">
                              <h2 class="card-title">Mission</h2>                             
                            </div>
                            <img src= "https://bridgewoodcabinetry.com/wp-content/uploads/2019/12/Mission-160x300.jpg",
                          style="max-width: 100%; max-height:75%;", class="center"/>
                      </div>
-                     <div class = "card">                         
+                     <div class = "card styleCard" data-value="637e60d8317529e2e4f77fbf">                         
                         <div class="card-body">
                             <h2 class="card-title">Simple Shaker</h2>                             
                           </div>
@@ -142,11 +141,19 @@
             <section>
                 <h3 style="position: relative; left: 50px;">Click Submit to View the Cost</h3>
                 <div >
-                    <button id="SubmitButton">Submit</button>
+                    <button id="SubmitButton" onclick="submit()" style="cursor: pointer;">Submit</button>
                 </div>
             </section>
         </main>
-        <footer style="margin-top:20px; width: 100%; height: 500px; background-color: black;">Footer</footer>
+        <footer style="margin-top:20px; width: 100%; height: 500px;">
+        <pre id="json"></pre>
+        </footer>
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
         <script src="./main.js"></script>
     </body>
 </html>
